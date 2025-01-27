@@ -1,6 +1,6 @@
-package com.controlador.presenca.repository;
+package com.controlador.presenca.repositories;
 
-import com.controlador.presenca.entity.Presenca;
+import com.controlador.presenca.entities.Presenca;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package com.controlador.presenca.entity;
+package com.controlador.presenca.entities;
 
 
 import jakarta.persistence.*;

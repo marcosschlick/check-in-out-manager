@@ -1,9 +1,9 @@
-package com.controlador.presenca.service;
+package com.controlador.presenca.services;
 
-import com.controlador.presenca.entity.Presenca;
-import com.controlador.presenca.entity.Usuario;
-import com.controlador.presenca.repository.PresencaRepository;
-import com.controlador.presenca.repository.UsuarioRepository;
+import com.controlador.presenca.entities.Presenca;
+import com.controlador.presenca.entities.Usuario;
+import com.controlador.presenca.repositories.PresencaRepository;
+import com.controlador.presenca.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.time.LocalDate;

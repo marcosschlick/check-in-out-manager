@@ -1,8 +1,8 @@
-package com.controlador.presenca.controller;
+package com.controlador.presenca.controllers;
 
-import com.controlador.presenca.entity.Presenca;
-import com.controlador.presenca.repository.PresencaRepository;
-import com.controlador.presenca.service.PresencaService;
+import com.controlador.presenca.entities.Presenca;
+import com.controlador.presenca.repositories.PresencaRepository;
+import com.controlador.presenca.services.PresencaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

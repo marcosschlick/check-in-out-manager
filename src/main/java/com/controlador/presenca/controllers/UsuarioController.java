@@ -1,7 +1,7 @@
-package com.controlador.presenca.controller;
+package com.controlador.presenca.controllers;
 
-import com.controlador.presenca.entity.Usuario;
-import com.controlador.presenca.repository.UsuarioRepository;
+import com.controlador.presenca.entities.Usuario;
+import com.controlador.presenca.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
