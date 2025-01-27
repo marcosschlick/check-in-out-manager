@@ -6,8 +6,8 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface PresencaRepository extends JpaRepository<Presenca, Integer> {
+public interface PresencaRepository extends JpaRepository<Presenca, Long> {
 
-    Optional<Presenca> findTopByUsuarioIdOrderByIdDesc(int usuarioId);
+    Optional<Presenca> findTopByUsuarioIdOrderByIdDesc(Long usuarioId);
 
 }

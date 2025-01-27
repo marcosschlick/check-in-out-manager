@@ -10,7 +10,7 @@ public class Presenca {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id", nullable = false)
@@ -31,7 +31,7 @@ public class Presenca {
     public Presenca() {
     }
 
-    public Presenca(int id, Usuario usuario, LocalDate dataEntrada, LocalTime horarioEntrada, LocalDate dataSaida, LocalTime horarioSaida) {
+    public Presenca(Long id, Usuario usuario, LocalDate dataEntrada, LocalTime horarioEntrada, LocalDate dataSaida, LocalTime horarioSaida) {
         this.id = id;
         this.usuario = usuario;
         this.dataEntrada = dataEntrada;
@@ -40,11 +40,11 @@ public class Presenca {
         this.horarioSaida = horarioSaida;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

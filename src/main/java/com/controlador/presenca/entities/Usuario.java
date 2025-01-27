@@ -1,7 +1,9 @@
 package com.controlador.presenca.entities;
 
 
+
 import jakarta.persistence.*;
+import org.hibernate.annotations.processing.Pattern;
 
 @Entity(name = "usuario")
 @Table(name = "usuario", uniqueConstraints = @UniqueConstraint(columnNames = "documento"))
@@ -9,7 +11,7 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(nullable = false, length = 255)
     private String nome;
@@ -20,17 +22,17 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(int id, String nome, String documento) {
+    public Usuario(Long id, String nome, String documento) {
         this.id = id;
         this.nome = nome;
         this.documento = documento;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

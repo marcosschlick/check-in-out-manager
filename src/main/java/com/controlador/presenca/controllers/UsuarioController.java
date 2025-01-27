@@ -22,7 +22,7 @@ public class UsuarioController {
     }
 
     @GetMapping(path = "/{id}")
-    public Optional<Usuario> getUsuarioById(@PathVariable int id) {
+    public Optional<Usuario> getUsuarioById(@PathVariable Long id) {
         return usuarioRepository.findById(id);
     }
 }
