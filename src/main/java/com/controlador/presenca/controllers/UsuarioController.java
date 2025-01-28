@@ -1,12 +1,14 @@
 package com.controlador.presenca.controllers;
 
-import com.controlador.presenca.entities.Usuario;
-import com.controlador.presenca.repositories.UsuarioRepository;
+import com.controlador.presenca.dto.UsuarioDTO;
+import com.controlador.presenca.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -14,16 +16,16 @@ import java.util.Optional;
 public class UsuarioController {
 
     @Autowired
-    private UsuarioRepository usuarioRepository;
+    private UsuarioService usuarioService;
 
     @GetMapping
-    public Iterable<Usuario> getUsuarios() {
-        return usuarioRepository.findAll();
+    public List<UsuarioDTO> getUsuarios() {
+        return usuarioService.findAll();
     }
 
     @GetMapping(path = "/{id}")
-    public Optional<Usuario> getUsuarioById(@PathVariable Long id) {
-        return usuarioRepository.findById(id);
+    public UsuarioDTO getUsuarioById(@PathVariable Long id) {
+        return usuarioService.findById(id);
     }
 }
 
