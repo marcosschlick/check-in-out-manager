@@ -1,6 +1,12 @@
-# Maven
+# Ignore Maven build output
 target/
+.mvn/wrapper/maven-wrapper.jar
 
-# IntelliJ IDEA
-.idea/
+# Ignore help files
+HELP.md
+
+### IntelliJ IDEA ###
+**/.idea/
+*.iws
 *.iml
+*.ipr
