@@ -7,11 +7,5 @@ Este projeto utiliza Java Spring como framework principal, seguindo o padrão MV
 
 ## Tecnologias utilizadas
 - Java (Spring Framework)
-- MariaDB
 - Maven (gestão de dependências)
-- HTML/CSS/JS (para o frontend)
-
-## Funcionalidades previstas
-- Registro de horário de entrada com base no identificador informado.
-- Atualização do horário de saída no mesmo registro.
-- Interface simples e funcional.
+- MariaDB
