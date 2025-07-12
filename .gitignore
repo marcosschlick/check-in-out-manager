@@ -10,3 +10,11 @@ HELP.md
 *.iws
 *.iml
 *.ipr
+
+### VSCODE ###
+.vscode/*
+.vscode/
+
+### Environment Variables ###
+.env
+*.env
