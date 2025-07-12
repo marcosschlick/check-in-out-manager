@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  mariadb:
+    image: mariadb:11.8
+    container_name: controlador-presenca-mariadb
+    env_file: .env
+    environment:
+      MARIADB_ROOT_PASSWORD: "${MARIADB_ROOT_PASSWORD}" 
+      MARIADB_DATABASE: "controlador_presenca"
+      MARIADB_USER: "${MARIADB_USER}"
+      MARIADB_PASSWORD: "${MARIADB_PASSWORD}"
+    ports:
+      - "${MARIADB_PORT}:3306"
+    volumes:
+      - mariadb_data:/var/lib/mariadb
+    restart: unless-stopped
+
+volumes:
+  mariadb_data:
