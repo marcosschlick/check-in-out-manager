@@ -1,21 +1,21 @@
-CREATE DATABASE IF NOT EXISTS controlador_presenca;
-USE controlador_presenca;
+CREATE DATABASE IF NOT EXISTS check-in-out-manager;
+USE check-in-out-manager;
 
--- Tabela de usuários com validação no campo documento
-CREATE TABLE usuario (
+-- users table with document field validation
+CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    documento VARCHAR(11) UNIQUE NOT NULL,
-    nome VARCHAR(255) NOT NULL,
-    CONSTRAINT chk_documento_valido CHECK (documento REGEXP '^[0-9]{8}$|^[0-9]{11}$')
+    document VARCHAR(11) UNIQUE NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    CONSTRAINT chk_valid_document CHECK (document REGEXP '^[0-9]{8}$|^[0-9]{11}$')
 );
 
--- Tabela de presenças
-CREATE TABLE presenca (
+-- attendances table
+CREATE TABLE attendances (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    usuario_id INT NOT NULL,
-    data_entrada DATE NOT NULL,
-    horario_entrada TIME NOT NULL,
-    data_saida DATE DEFAULT NULL,
-    horario_saida TIME DEFAULT NULL,
-    FOREIGN KEY (usuario_id) REFERENCES usuario(id) ON DELETE CASCADE
+    user_id INT NOT NULL,
+    entry_date DATE NOT NULL,
+    entry_time TIME NOT NULL,
+    exit_date DATE DEFAULT NULL,
+    exit_time TIME DEFAULT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
