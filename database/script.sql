@@ -46,7 +46,7 @@ CREATE TABLE attendances (
     user_id BIGINT NOT NULL,
     session_id BIGINT NOT NULL,
     check_in_time DATETIME NOT NULL,
-    check_out_time DATETIME NOT NULL,
+    check_out_time DATETIME,
     created_at DATETIME NOT NULL,
     deactivated_at DATETIME,
     FOREIGN KEY (user_id) REFERENCES users(id),
