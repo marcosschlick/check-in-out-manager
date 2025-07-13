@@ -1,4 +1,4 @@
-package com.checkinout.manager.dto;
+package com.checkinout.manager.dtos;
 
 import com.checkinout.manager.entities.Usuario;
 

@@ -1,6 +1,6 @@
 package com.checkinout.manager.services;
 
-import com.checkinout.manager.dto.UsuarioDTO;
+import com.checkinout.manager.dtos.UsuarioDTO;
 import com.checkinout.manager.entities.Usuario;
 import com.checkinout.manager.repositories.UsuarioRepository;
 import org.springframework.transaction.annotation.Transactional;

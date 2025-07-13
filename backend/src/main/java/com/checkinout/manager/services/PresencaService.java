@@ -1,6 +1,6 @@
 package com.checkinout.manager.services;
 
-import com.checkinout.manager.dto.PresencaDTO;
+import com.checkinout.manager.dtos.PresencaDTO;
 import com.checkinout.manager.entities.Presenca;
 import com.checkinout.manager.entities.Usuario;
 import com.checkinout.manager.repositories.PresencaRepository;

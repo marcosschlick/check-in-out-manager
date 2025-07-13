@@ -1,6 +1,6 @@
 package com.checkinout.manager.controllers;
 
-import com.checkinout.manager.dto.UsuarioDTO;
+import com.checkinout.manager.dtos.UsuarioDTO;
 import com.checkinout.manager.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
