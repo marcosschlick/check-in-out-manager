@@ -1,6 +1,8 @@
 package com.checkinout.manager.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,9 +22,11 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Size(min = 3, max = 255, message = "Name must be between 3 and 255 characters")
     @Column(nullable = false, length = 255)
     private String name;
 
+    @Pattern(regexp = "[A-Z0-9]{6}", message = "Code must be 6 uppercase alphanumeric characters")
     @Column(nullable = false, length = 6, unique = true)
     private String code;
 

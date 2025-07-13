@@ -1,6 +1,7 @@
 package com.checkinout.manager.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.AssertTrue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,6 +34,11 @@ public class Attendance {
 
     @Column(name = "check_out_time")
     private LocalDateTime checkOutTime;
+
+    @AssertTrue(message = "Check-out time must be after check-in time")
+    public boolean isValidCheckOutTime() {
+        return checkOutTime == null || checkOutTime.isAfter(checkInTime);
+    }
 
     @Column(name = "created_at", nullable = false, updatable = false)
     @CreationTimestamp
