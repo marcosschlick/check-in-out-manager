@@ -3,7 +3,7 @@ services:
   mariadb:
     image: mariadb:11.8
     container_name: check-in-out-manager-mariadb
-    env_file: .env
+    env_file: ./backend/.env
     environment:
       MARIADB_ROOT_PASSWORD: "${MARIADB_ROOT_PASSWORD}" 
       MARIADB_DATABASE: "check-in-out-manager"
