@@ -1,9 +1,8 @@
-package com.controlador.presenca.entities;
+package com.checkinout.manager.entities;
 
 
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.processing.Pattern;
 
 @Entity(name = "usuario")
 @Table(name = "usuario", uniqueConstraints = @UniqueConstraint(columnNames = "documento"))

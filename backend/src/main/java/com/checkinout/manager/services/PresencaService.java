@@ -1,10 +1,10 @@
-package com.controlador.presenca.services;
+package com.checkinout.manager.services;
 
-import com.controlador.presenca.dto.PresencaDTO;
-import com.controlador.presenca.entities.Presenca;
-import com.controlador.presenca.entities.Usuario;
-import com.controlador.presenca.repositories.PresencaRepository;
-import com.controlador.presenca.repositories.UsuarioRepository;
+import com.checkinout.manager.dto.PresencaDTO;
+import com.checkinout.manager.entities.Presenca;
+import com.checkinout.manager.entities.Usuario;
+import com.checkinout.manager.repositories.PresencaRepository;
+import com.checkinout.manager.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

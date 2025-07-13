@@ -1,7 +1,7 @@
-package com.controlador.presenca.dto;
+package com.checkinout.manager.dto;
 
-import com.controlador.presenca.entities.Presenca;
-import com.controlador.presenca.entities.Usuario;
+import com.checkinout.manager.entities.Presenca;
+import com.checkinout.manager.entities.Usuario;
 import java.time.LocalDate;
 import java.time.LocalTime;
 

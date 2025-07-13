@@ -1,7 +1,7 @@
-package com.controlador.presenca.controllers;
+package com.checkinout.manager.controllers;
 
-import com.controlador.presenca.dto.PresencaDTO;
-import com.controlador.presenca.services.PresencaService;
+import com.checkinout.manager.dto.PresencaDTO;
+import com.checkinout.manager.services.PresencaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

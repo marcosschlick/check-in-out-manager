@@ -1,6 +1,6 @@
-package com.controlador.presenca.dto;
+package com.checkinout.manager.dto;
 
-import com.controlador.presenca.entities.Usuario;
+import com.checkinout.manager.entities.Usuario;
 
 public class UsuarioDTO {
 

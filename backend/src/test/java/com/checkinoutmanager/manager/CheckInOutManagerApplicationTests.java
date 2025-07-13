@@ -1,10 +1,10 @@
-package com.controlador.presenca;
+package com.checkinoutmanager.manager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ControladorDePresencaApplicationTests {
+class CheckInOutManagerApplicationTests {
 
 	@Test
 	void contextLoads() {

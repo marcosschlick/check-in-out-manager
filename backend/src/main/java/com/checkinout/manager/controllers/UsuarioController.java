@@ -1,7 +1,7 @@
-package com.controlador.presenca.controllers;
+package com.checkinout.manager.controllers;
 
-import com.controlador.presenca.dto.UsuarioDTO;
-import com.controlador.presenca.services.UsuarioService;
+import com.checkinout.manager.dto.UsuarioDTO;
+import com.checkinout.manager.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/usuario")

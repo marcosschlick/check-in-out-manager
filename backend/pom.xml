@@ -8,10 +8,10 @@
         <version>3.4.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.controlador.presenca</groupId>
-    <artifactId>controlador-presenca</artifactId>
+    <groupId>com.checkinout.manager</groupId>
+    <artifactId>check-in-out-manager</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Controlador de Presenca</name>
+    <name>Check In Out Manager</name>
     <description>Sistema para registro e controle de horários de entrada e saída de pessoas, utilizando CPF ou cédula
         uruguaia como identificador.
     </description>

@@ -1,13 +1,13 @@
-package com.controlador.presenca;
+package com.checkinout.manager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ControladorDePresencaApplication {
+public class CheckInOutManagerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ControladorDePresencaApplication.class, args);
+		SpringApplication.run(CheckInOutManagerApplication.class, args);
 	}
 
 }

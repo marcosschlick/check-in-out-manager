@@ -1,4 +1,4 @@
-package com.controlador.presenca.entities;
+package com.checkinout.manager.entities;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
