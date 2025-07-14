@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS check-in-out-manager;
-USE check-in-out-manager;
-
 -- users table
 CREATE TABLE users (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
