@@ -2,7 +2,6 @@ package com.checkinout.manager.controllers;
 
 import com.checkinout.manager.dtos.UserCreateDTO;
 import com.checkinout.manager.dtos.UserResponseDTO;
-import com.checkinout.manager.exceptions.DuplicateResourceException;
 import com.checkinout.manager.services.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
